@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ropecli"
+version = "0.1.0"
+description = ""
+authors = ["Nicolas Zermati <nicoolas25@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ropecli = 'ropecli.cli:rope_cli'
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1"
+rope = "^1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
