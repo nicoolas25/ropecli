@@ -6,7 +6,7 @@ authors = ["Nicolas Zermati <nicoolas25@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-ropecli = 'ropecli.cli:rope_cli'
+ropecli = 'ropecli.cli:run_cli'
 
 [tool.poetry.group.dev.dependencies]
 ipdb = "^0.13"
