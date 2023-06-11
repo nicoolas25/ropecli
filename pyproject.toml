@@ -14,7 +14,7 @@ ipdb = "^0.13"
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1"
-rope = { git = "git@github.com:nicoolas25/rope.git", branch = "master" }
+rope = { git = "git@github.com:nicoolas25/rope.git", tag = "1.8.1" }
 
 
 [build-system]

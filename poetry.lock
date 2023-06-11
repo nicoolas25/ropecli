@@ -229,13 +229,13 @@ files = [
 
 [[package]]
 name = "platformdirs"
-version = "3.5.2"
+version = "3.5.3"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "platformdirs-3.5.2-py3-none-any.whl", hash = "sha256:bfb917aff291e8587ac2c8c44d8ed1b14a775a250a4ed61935f34de4840c1ce8"},
-    {file = "platformdirs-3.5.2.tar.gz", hash = "sha256:f56f8067f85988d619f174a3c9dbb2c3c730c03edfd9dc10cb55a7de3498dd81"},
+    {file = "platformdirs-3.5.3-py3-none-any.whl", hash = "sha256:0ade98a4895e87dc51d47151f7d2ec290365a585151d97b4d8d6312ed6132fed"},
+    {file = "platformdirs-3.5.3.tar.gz", hash = "sha256:e48fabd87db8f3a7df7150a4a5ea22c546ee8bc39bc2473244730d4b56d2cc4e"},
 ]
 
 [package.extras]
@@ -323,17 +323,22 @@ version = "1.8.0"
 description = "a python refactoring library..."
 optional = false
 python-versions = ">=3.7"
-files = [
-    {file = "rope-1.8.0-py3-none-any.whl", hash = "sha256:0767424ed40ce237dcf1c1f5088054fef960e5b19f4a0850783a259a3600d7bd"},
-    {file = "rope-1.8.0.tar.gz", hash = "sha256:3de1d1f1cf2412540c6a150067fe25298175e7c2b72455b6ca8395f61678da82"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 pytoolconfig = {version = ">=1.2.2", extras = ["global"]}
 
 [package.extras]
-dev = ["build (>=0.7.0)", "pip-tools (>=6.12.1)", "pre-commit (>=2.20.0)", "pytest (>=7.0.1)", "pytest-timeout (>=2.1.0)", "toml (>=0.10.2)"]
+dev = ["build (>=0.7.0)", "pre-commit (>=2.20.0)", "pytest (>=7.0.1)", "pytest-timeout (>=2.1.0)"]
 doc = ["pytoolconfig[doc]", "sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)"]
+release = ["pip-tools (>=6.12.1)", "toml (>=0.10.2)", "twine (>=4.0.2)"]
+
+[package.source]
+type = "git"
+url = "git@github.com:nicoolas25/rope.git"
+reference = "3b9500b1"
+resolved_reference = "3b9500b157b3b3b9ea6b85198e3dd64c644a2bbc"
 
 [[package]]
 name = "six"
@@ -405,4 +410,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "daa144b52ae67df309ffff96ac1ff1faed0ce145acee09e8db778666e9f4c177"
+content-hash = "03e95282b6e7ce7ba82f59b6b414d3a15e6294ef114728509f9ef1854604a275"
